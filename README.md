@@ -96,62 +96,36 @@ The command “eventSim simdata.txt 1” generates the following output:
     
 Meanwhile, the command “eventSim simdata.txt 2” generates the following output:
 
-<<< BEGIN SIMULATION (2 registers) >>>
-
-Register 1 processing arrival event at time: 1 5
-
-Register 2 processing arrival event at time: 2 5
-
-Register 1 processing arrival event at time: 4 5
-
-Register 1 processing departure event at time: 6
-
-Register 2 processing departure event at time: 7
-
-Register 1 processing departure event at time: 11
-
-Register 1 processing arrival event at time: 20 5
-
-Register 2 processing arrival event at time: 22 5
-
-Register 1 processing arrival event at time: 24 5
-
-Register 1 processing departure event at time: 25
-
-Register 1 processing arrival event at time: 26 5
-
-Register 2 processing departure event at time: 27
-
-Register 2 processing arrival event at time: 28 5
-
-Register 1 processing departure event at time: 30
-
-Register 1 processing arrival event at time: 30 5
-
-Register 2 processing departure event at time: 33
-
-Register 1 processing departure event at time: 35
-
-Register 1 processing departure event at time: 40
-
-Register 1 processing arrival event at time: 88 3
-
-Register 1 processing departure event at time: 91
-
-<<< END SIMULATION >>>
-
->>> SIMULATION STATISTICS
-
-    Register number:            1   2   OVERALL
-    
-    Transactions processed:     7   3   10
-    
-    Average transaction time: 4.71 5.00 4.80
-    
-    Maximum wait line length:   0   0   0
-    
-    Average wait line length:   0   0   0
-    
-    Average wait time:         1.71 0   1.20
+      <<< BEGIN SIMULATION (2 registers) >>>
+      Register 1 processing arrival event at time:    1     5
+      Register 2 processing arrival event at time:    2     5
+      Register 1 processing arrival event at time:    4     5
+      Register 1 processing departure event at time:  6
+      Register 2 processing departure event at time:  7
+      Register 1 processing departure event at time:  11
+      Register 1 processing arrival event at time:    20    5
+      Register 2 processing arrival event at time:    22    5
+      Register 1 processing arrival event at time:    24    5
+      Register 1 processing departure event at time:  25
+      Register 1 processing arrival event at time:    26    5
+      Register 2 processing departure event at time:  27
+      Register 2 processing arrival event at time:    28    5
+      Register 1 processing departure event at time:  30
+      Register 1 processing arrival event at time:    30    5
+      Register 2 processing departure event at time:  33
+      Register 1 processing departure event at time:  35
+      Register 1 processing departure event at time:  40
+      Register 1 processing arrival event at time:    88    3
+      Register 1 processing departure event at time:  91
+      <<< END SIMULATION >>>
+      
+      >>> SIMULATION STATISTICS
+      
+             Register number:    1     2  OVERALL
+      Transactions processed:    7     3       10
+    Average transaction time:    4.71  5.00  4.80
+    Maximum wait line length:    0     0     0
+    Average wait line length:    0.00  0.00  0.00
+           Average wait time:    1.71  0.00  1.20
     
 Notice the improvement in wait times by simply opening up a second register.
