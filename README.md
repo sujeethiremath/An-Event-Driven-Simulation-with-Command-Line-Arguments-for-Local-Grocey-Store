@@ -5,9 +5,9 @@
 3. Just as in a grocery store, grocery store customers ready to check out have to wait in line first–come, first served if no
 registers are available. It is Assumed that customers ready to check out either
 
-    (a) go the the first available register; or
+   (a) go the the first available register; or
 
-    (b) if no register is available, they go to the first shortest line available.
+   (b) if no register is available, they go to the first shortest line available.
 
 It is assumed that customers ready to check out are routed to the grocery store’s registers bay and that registers are numbered
 starting with the one closest to the registers bay entrance.
@@ -34,25 +34,16 @@ Sample Input
 
 The following is sample input file. The text file named simdata.txt contain the following:
 
-1 5
-
-2 5
-
-4 5
-
-20 5
-
-22 5
-
-24 5
-
-26 5
-
-28 5
-
-30 5
-
-88 3
+        1 5
+        2 5
+        4 5
+        20 5
+        22 5
+        24 5
+        26 5
+        28 5
+        30 5
+        88 3
 
 Then typing the command “eventSim simdata.txt 1” runs the simulation on the provided data using a single register.
 Likewise, the command “eventSim simdata.txt 2” runs the simulation on the provided data using a two registers.
@@ -70,63 +61,37 @@ Sample Output
 
 The command “eventSim simdata.txt 1” generates the following output: 
 
-<<< BEGIN SIMULATION (1 registers) >>>
-
-Register 1 processing arrival event at time: 1 5
-
-Register 1 processing arrival event at time: 2 5
-
-Register 1 processing arrival event at time: 4 5
-
-Register 1 processing departure event at time: 6
-
-Register 1 processing departure event at time: 11
-
-Register 1 processing departure event at time: 16
-
-Register 1 processing arrival event at time: 20 5
-
-Register 1 processing arrival event at time: 22 5
-
-Register 1 processing arrival event at time: 24 5
-
-Register 1 processing departure event at time: 25
-
-Register 1 processing arrival event at time: 26 5
-
-Register 1 processing arrival event at time: 28 5
-
-Register 1 processing departure event at time: 30
-
-Register 1 processing arrival event at time: 30 5
-
-Register 1 processing departure event at time: 35
-
-Register 1 processing departure event at time: 40
-
-Register 1 processing departure event at time: 45
-
-Register 1 processing departure event at time: 50
-
-Register 1 processing arrival event at time: 88 3
-
-Register 1 processing departure event at time: 91
-
-<<< END SIMULATION >>>
-
->>> SIMULATION STATISTICS
-
-    Register number: 1 OVERALL
-    
-    Transactions processed: 10 10
-    
-    Average transaction time: 4.80 4.80
-    
-    Maximum wait line length: 2 2
-    
-    Average wait line length: 0.70 0.70
-    
-    Average wait time: 5.60 5.60
+        <<< BEGIN SIMULATION (1 registers) >>>
+        Register 1 processing arrival event at time:    1   5
+        Register 1 processing arrival event at time:    2   5
+        Register 1 processing arrival event at time:    4   5
+        Register 1 processing departure event at time:  6
+        Register 1 processing departure event at time:  11
+        Register 1 processing departure event at time:  16
+        Register 1 processing arrival event at time:    20  5
+        Register 1 processing arrival event at time:    22  5
+        Register 1 processing arrival event at time:    24  5
+        Register 1 processing departure event at time:  25
+        Register 1 processing arrival event at time:    26  5
+        Register 1 processing arrival event at time:    28  5
+        Register 1 processing departure event at time:  30
+        Register 1 processing arrival event at time:    30  5
+        Register 1 processing departure event at time:  35
+        Register 1 processing departure event at time:  40
+        Register 1 processing departure event at time:  45
+        Register 1 processing departure event at time:  50
+        Register 1 processing arrival event at time:    88  3
+        Register 1 processing departure event at time:  91
+        <<< END SIMULATION >>>
+        
+        >>> SIMULATION STATISTICS
+        
+                Register number:    1   OVERALL
+         Transactions processed:    10      10
+       Average transaction time:    4.80    4.80
+       Maximum wait line length:    2       2
+       Average wait line length:    0.70    0.70
+              Average wait time:    5.60    5.60
     
     
 Meanwhile, the command “eventSim simdata.txt 2” generates the following output:
